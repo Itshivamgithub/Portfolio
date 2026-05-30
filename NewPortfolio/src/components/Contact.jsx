@@ -29,6 +29,17 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (
+      !import.meta.env.VITE_APP_EMAILJS_RECEIVERID ||
+      !import.meta.env.VITE_APP_EMAILJS_TEMPLATEID ||
+      !import.meta.env.VITE_APP_EMAILJS_USERID
+    ) {
+      setLoading(false);
+      alert("Email service is not configured correctly. Please check environment variables.");
+      return;
+    }
+
     setLoading(true);
 
     emailjs
