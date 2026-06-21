@@ -124,10 +124,14 @@ const technologies = [
 
 const projects = [
   {
-    name: "StudyNotion",
+    name: "Commitra",
     description:
-      "StudyNotion is a comprehensive MERN-stack learning platform that enables educators to create, manage, and deliver courses while providing students with an engaging learning experience.",
+      "Developed Commitra, an AI-powered GitHub analytics platform featuring OAuth authentication, repository health scoring, real-time analytics, Redis caching, background job processing, and interactive dashboards using Next.js, NestJS, PostgreSQL, Redis, and Docker.",
     tags: [
+       {
+        name: "next.js",
+        color: "blue-text-gradient",
+      },
       {
         name: "react",
         color: "blue-text-gradient",
@@ -137,7 +141,7 @@ const projects = [
         color: "pink-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "postgresql",
         color: "green-text-gradient",
       },
       {
